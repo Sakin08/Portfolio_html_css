@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Navbar</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Navbar -->
+  <nav id="navbar" class="navbar">
+    <div class="container">
+      <!-- Animated Name -->
+      <div id="animated-name" class="animated-name">MD. SAKIN</div>
+
+      <!-- Desktop Navigation -->
+      <ul class="desktop-nav">
+        <li><button class="nav-btn" data-section="home">Home</button></li>
+        <li><button class="nav-btn" data-section="about">About</button></li>
+        <li><button class="nav-btn" data-section="projects">Projects</button></li>
+        <li><button class="nav-btn" data-section="skills">Skills</button></li>
+        <li><button class="nav-btn" data-section="contact">Contact</button></li>
+        <li class="social-icons">
+          <a href="https://github.com/Sakin08" target="_blank" class="icon-link">
+            <img src="github-icon.svg" alt="GitHub" class="icon">
+          </a>
+          <a href="https://www.linkedin.com/in/md-sohanoor-rahaman-sakin-7006b824b/" target="_blank" class="icon-link">
+            <img src="linkedin-icon.svg" alt="LinkedIn" class="icon">
+          </a>
+        </li>
+      </ul>
+
+      <!-- Mobile Hamburger -->
+      <button id="hamburger" class="hamburger">
+        <span id="hamburger-icon" class="bars-icon"></span>
+      </button>
+    </div>
+
+    <!-- Mobile Menu -->
+    <ul id="mobile-menu" class="mobile-menu hidden">
+      <li><button class="nav-btn" data-section="home">Home</button></li>
+      <li><button class="nav-btn" data-section="about">About</button></li>
+      <li><button class="nav-btn" data-section="projects">Projects</button></li>
+      <li><button class="nav-btn" data-section="skills">Skills</button></li>
+      <li><button class="nav-btn" data-section="contact">Contact</button></li>
+      <li class="social-icons">
+        <a href="https://github.com/Sakin08" target="_blank" class="icon-link">
+          <img src="github-icon.svg" alt="GitHub" class="icon">
+        </a>
+        <a href="https://www.linkedin.com/in/md-sohanoor-rahaman-sakin-7006b824b/" target="_blank" class="icon-link">
+          <img src="linkedin-icon.svg" alt="LinkedIn" class="icon">
+        </a>
+      </li>
+    </ul>
+  </nav>
+
+
+  <section id="home" class="home-section">
+    <!-- Decorative Shapes -->
+    <div class="decorative-shape top-left"></div>
+    <div class="decorative-shape bottom-right"></div>
+    <div class="decorative-shape center-right"></div>
+
+    <div class="content-container">
+      <!-- Text Content -->
+      <div class="text-content">
+        <p class="intro-text">Hi, my name is</p>
+        <h1 class="name-heading">MD. SOHANOOR RAHAMAN <span class="highlight">SAKIN</span></h1>
+        <h2 class="role-heading">
+          I'm a <span class="role-text">CSE Student and</span>
+          <span class="role-cursor"></span>
+        </h2>
+        <p class="description">
+          Passionate about building innovative web applications from front to back. I love to create efficient, scalable, and user-friendly solutions.
+        </p>
+        <div class="cta-buttons">
+          <button class="cta-button view-work" onclick="scrollToSection('projects')">View My Work</button>
+          <a href="https://drive.google.com/drive/u/0/folders/1ombUDLQNjuZcMMupRx_ZPei8iay_9xF-" target="_blank" class="cta-button download-resume">Download Resume</a>
+        </div>
+      </div>
+
+      <!-- Profile Image -->
+      <div class="image-container">
+        <div class="profile-image-wrapper">
+          <img src="profile.jpg" alt="Md Sohanoor Rahaman Sakin" class="profile-image">
+          <div class="image-ring"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="about-section">
+    <div class="about-content">
+      <!-- Text Content -->
+      <div class="text-content">
+        <h2 class="about-heading">
+          About Me
+          <span class="heading-underline"></span>
+        </h2>
+        <p class="about-text">
+          Hi, I'm <span class="highlight">MD. Sohanoor Rahaman Sakin</span>, a Computer Science and Engineering student at Shahjalal University of Science and Technology (SUST).
+        </p>
+        <p class="about-text">
+          I’m currently learning and improving my skills in programming and web development. I have basic knowledge of <span class="highlight">C, C++, Java, and Python</span>, and I enjoy exploring how technology can solve real-world problems.
+        </p>
+        <p class="about-text">
+          I'm also learning full-stack web development using tools like <span class="highlight">HTML, CSS, JavaScript, React, Node.js, and MongoDB</span>. I enjoy building modern, efficient, and user-friendly applications.
+        </p>
+        <p class="about-text">
+          I love to collaborate, learn continuously, and take on new challenges. My interests include <span class="highlight">problem-solving, making MERN projects</span>.
+        </p>
+        <p class="about-text">
+          Currently, I'm working on a Doctors Appointment system booking web app project and exploring more about APIs, authentication, and scalable frontend design.
+        </p>
+        <button class="cta-button" onclick="scrollToSection('projects')">View My Work</button>
+      </div>
+
+      <!-- Image Content -->
+      <div class="image-content">
+        <img src="profile.jpg" alt="MD. Sohanoor Rahaman Sakin" class="profile-image">
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects" class="projects-section">
+    <div class="container">
+      <h2 class="section-heading">My Projects</h2>
+      <div class="projects-grid">
+        <!-- Project 1 -->
+        <div class="project-card">
+          <img
+            src="https://placehold.co/600x400/FF6F61/FFFFFF?text=Doctors+Appointment+Booking"
+            alt="Doctors Appointment Booking"
+            class="project-image"
+          />
+          <div class="project-content">
+            <h3 class="project-title">Doctors Appointment Booking (developing phase)</h3>
+            <p class="project-description">
+              A full-featured appointment booking system for doctors and patients with scheduling, notifications, and patient management.
+            </p>
+            <div class="project-links">
+              <a href="https://github.com/Sakin08/doctors-appointment-booking" target="_blank" class="button github-link">
+                <span class="icon github-icon"></span> Code
+              </a>
+              <a href="https://your-doctors-appointment-live-link.com" target="_blank" class="button live-link">
+                <span class="icon live-icon"></span> Live Demo
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Add other project cards here -->
+        <!-- Example for Project 2 -->
+        <div class="project-card">
+          <img
+            src="https://i.postimg.cc/hPMwF45n/photo-2025-06-25-12-14-36.jpg"
+            alt="Math Game App"
+            class="project-image"
+          />
+          <div class="project-content">
+            <h3 class="project-title">Math Game App (Kotlin)</h3>
+            <p class="project-description">
+              A fun and educational math game app for primary school students built using Kotlin. Includes addition, subtraction, and multiplication challenges with scoring.
+            </p>
+            <div class="project-links">
+              <a href="https://github.com/Sakin08/Math-Game" target="_blank" class="button github-link">
+                <span class="icon github-icon"></span> Code
+              </a>
+              <a href="https://drive.google.com/drive/u/0/folders/1mS2Bc1fHq2gF_I9y66PkF4b8jbZxyucl" target="_blank" class="button live-link">
+                <span class="icon live-icon"></span> Live Demo
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+   <!-- Skills Section -->
+  <section id="skills" class="skills-section">
+    <div class="skills-container">
+      <h2 class="skills-heading">
+        My Skills
+        <span class="heading-underline"></span>
+      </h2>
+      <div class="skills-grid">
+        <!-- Skill Item -->
+        <div class="skill-item">
+          <img
+            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg"
+            alt="HTML"
+            class="skill-icon"
+            onerror="this.onerror=null;this.src='https://placehold.co/64x64?text=No+Icon';"
+          />
+          <p class="skill-name">HTML</p>
+        </div>
+        <!-- Example for adding other skill items -->
+        <div class="skill-item">
+          <img
+            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg"
+            alt="CSS"
+            class="skill-icon"
+            onerror="this.onerror=null;this.src='https://placehold.co/64x64?text=No+Icon';"
+          />
+          <p class="skill-name">CSS</p>
+        </div>
+        <div class="skill-item">
+          <img
+            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"
+            alt="JavaScript"
+            class="skill-icon"
+            onerror="this.onerror=null;this.src='https://placehold.co/64x64?text=No+Icon';"
+          />
+          <p class="skill-name">JavaScript</p>
+        </div>
+        <!-- Add more skill items here following the same structure -->
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="contact-section">
+    <!-- Decorative Background Shapes -->
+    <div class="decorative-shape top-left"></div>
+    <div class="decorative-shape bottom-right"></div>
+
+    <div class="contact-container">
+      <h2 class="contact-heading">
+        Get In Touch
+        <span class="heading-underline"></span>
+      </h2>
+      <p class="contact-description">
+        Have a question or a project in mind? I'd love to hear from you.
+        Let's connect and create something amazing!
+      </p>
+
+      <form action="https://getform.io/f/your-form-endpoint" method="POST" class="contact-form">
+        <!-- IMPORTANT: Replace "https://getform.io/f/your-form-endpoint" with your actual form service endpoint -->
+        <input
+          type="text"
+          name="name"
+          placeholder="Your Name"
+          class="form-input"
+          required
+        />
+        <input
+          type="email"
+          name="email"
+          placeholder="Your Email"
+          class="form-input"
+          required
+        />
+        <textarea
+          name="message"
+          rows="6"
+          placeholder="Your Message"
+          class="form-textarea"
+          required
+        ></textarea>
+        <button type="submit" class="form-button">Send Message</button>
+      </form>
+
+      <div class="contact-details">
+        <!-- Email -->
+        <div class="contact-item">
+          <svg class="icon email-icon" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24">
+            <path d="M20 4H4C2.9 4 2 4.9 2 6V18C2 19.1 2.9 20 4 20H20C21.1 20 22 19.1 22 18V6C22 4.9 21.1 4 20 4ZM20 8L12 13L4 8V6L12 11L20 6V8Z" />
+          </svg>
+          <span>www.mdsrsakin2001@gmail.com</span>
+        </div>
+
+        <!-- Location -->
+        <div class="contact-item">
+          <svg class="icon location-icon" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24">
+            <path d="M12 2C8.13401 2 5 5.13401 5 9C5 13.25 12 22 12 22C12 22 19 13.25 19 9C19 5.13401 15.866 2 12 2ZM7 9C7 6.23858 9.23858 4 12 4C14.7614 4 17 6.23858 17 9C17 11.38 14.213 15.319 12 18.132C9.78697 15.319 7 11.38 7 9ZM12 11C13.1046 11 14 10.1046 14 9C14 7.89543 13.1046 7 12 7C10.8954 7 10 7.89543 10 9C10 10.1046 10.8954 11 12 11Z" />
+          </svg>
+          <span>Dhaka, Bangladesh</span>
+        </div>
+
+        <!-- Phone -->
+        <div class="contact-item">
+          <svg class="icon phone-icon" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24">
+            <path d="M6.62 10.79a15.053 15.053 0 006.59 6.59l2.2-2.2a1 1 0 011.01-.24 11.72 11.72 0 003.69.59 1 1 0 011 1V20a1 1 0 01-1 1A16 16 0 014 5a1 1 0 011-1h3.5a1 1 0 011 1c0 1.26.2 2.49.59 3.69a1 1 0 01-.24 1.01l-2.2 2.2z" />
+          </svg>
+          <span>+880 1823-024067</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- Footer Section -->
+  <footer class="footer-section">
+    <div class="footer-overlay" aria-hidden="true"></div>
+
+    <div class="footer-container">
+      <!-- Left Section -->
+      <div class="footer-left">
+        <h3 class="footer-title">MD. SAKIN</h3>
+        <p class="footer-text">&copy; 2025 MD. SAKIN. All rights reserved.</p>
+      </div>
+
+      <!-- Middle Section - Quick Links -->
+      <div class="footer-middle">
+        <h4 class="footer-subtitle">Quick Links</h4>
+        <nav class="footer-links">
+          <a href="#home">Home</a>
+          <a href="#about">About</a>
+          <a href="#projects">Projects</a>
+          <a href="#skills">Skills</a>
+          <a href="#contact">Contact</a>
+        </nav>
+      </div>
+
+      <!-- Right Section - Social Links -->
+      <div class="footer-right">
+        <h4 class="footer-subtitle">Connect With Me</h4>
+        <div class="social-links">
+          <a href="https://www.linkedin.com/in/md-sohanoor-rahaman-sakin-7006b824b/" aria-label="LinkedIn" class="social-link linkedin">
+            <img src="icons/linkedin.svg" alt="LinkedIn" />
+          </a>
+          <a href="https://github.com/Sakin08" aria-label="GitHub" class="social-link github">
+            <img src="icons/github.svg" alt="GitHub" />
+          </a>
+          <a href="https://www.facebook.com/sakin44/" aria-label="Facebook" class="social-link facebook">
+            <img src="icons/facebook.svg" alt="Facebook" />
+          </a>
+          <a href="https://www.instagram.com/sr.sakin/?hl=en" aria-label="Instagram" class="social-link instagram">
+            <img src="icons/instagram.svg" alt="Instagram" />
+          </a>
+          <a href="https://wa.me/01823024067" aria-label="WhatsApp" class="social-link whatsapp">
+            <img src="icons/whatsapp.svg" alt="WhatsApp" />
+          </a>
+          <a href="https://t.me/+8801823024067" aria-label="Telegram" class="social-link telegram">
+            <img src="icons/telegram.svg" alt="Telegram" />
+          </a>
+          <a href="mailto:your.email@example.com" aria-label="Email" class="social-link email">
+            <img src="icons/email.svg" alt="Email" />
+          </a>
+          <a href="https://x.com/sakin_sr" aria-label="Twitter" class="social-link twitter">
+            <img src="icons/twitter.svg" alt="Twitter" />
+          </a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+
+
+</body>
+</html>

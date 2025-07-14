@@ -8,15 +8,21 @@ body {
   line-height: 1.6;
 }
 
+
+
+
 .container {
   max-width: 1200px;
   margin: 0 auto;
   padding: 0 20px;
 }
 
+
+
+
 /* Navbar */
 .navbar {
-  background-color: #333;
+  background-color: #9a0808;
   color: #fff;
   padding: 1rem 0;
   position: sticky;
@@ -64,8 +70,8 @@ body {
 }
 
 .navbar .social-icons .icon {
-  width: 24px;
-  height: 24px;
+  width: 30px;
+  height: 30px;
   margin-left: 15px;
   filter: invert(100%); /* Make icons white */
 }
@@ -729,3 +735,4 @@ body {
     font-size: 2rem;
   }
 }
+

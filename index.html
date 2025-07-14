@@ -34,21 +34,30 @@
 </nav>
 
   <section id="home" class="home-section">
-    <div class="content-container">
-      <div class="text-content">
+    <div class="decorative-shapes">
+      <div class="shape purple"></div>
+      <div class="shape pink"></div>
+      <div class="shape blue"></div>
+    </div>
+    <div class="content">
+      <div class="text-container">
         <p class="intro-text">Hi, my name is</p>
-        <h1 class="name-heading">MD. SOHANOOR RAHAMAN <span class="highlight">SAKIN</span></h1>
-        <h2 class="role-heading">I'm a CSE Student and Web Developer</h2>
+        <h1 class="main-heading">MD. SOHANOOR RAHAMAN <span class="highlight">SAKIN</span></h1>
+        <h2 class="role-heading">
+          I'm a <span class="role">CSE Student and Full Stack Web Developer</span>
+        </h2>
         <p class="description">
           Passionate about building innovative web applications from front to back. I love to create efficient, scalable, and user-friendly solutions.
         </p>
-        <div class="cta-buttons">
-          <a href="#projects" class="cta-button">View My Work</a>
-          <a href="https://drive.google.com/drive/u/0/folders/1ombUDLQNjuZcMMupRx_ZPei8iay_9xF-" target="_blank" class="cta-button">Download Resume</a>
+        <div class="buttons">
+          <button class="btn work-btn" onclick="scrollToSection('projects')">View My Work</button>
+          <a href="https://drive.google.com/drive/u/0/folders/1ombUDLQNjuZcMMupRx_ZPei8iay_9xF-" target="_blank" class="btn resume-btn">Download Resume</a>
         </div>
       </div>
       <div class="image-container">
-        <img src="profile.jpg" alt="Md Sohanoor Rahaman Sakin" class="profile-image">
+        <div class="image-wrapper">
+          <img src="profile.jpg" alt="Md Sohanoor Rahaman Sakin" class="profile-img">
+        </div>
       </div>
     </div>
   </section>

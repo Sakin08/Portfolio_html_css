@@ -75,89 +75,244 @@ body {
 }
 
 /* Home Section */
+/* Home Section */
 .home-section {
-  background-color: #e0e7ff; /* Light blue background */
-  padding: 80px 0;
-  text-align: center;
+  width: 100%;
+  height: 100vh; /* Changed to height for full viewport coverage */
+  background: linear-gradient(to bottom right, #eef2ff, #f3d9ff);
   display: flex;
-  justify-content: center;
   align-items: center;
-  min-height: calc(100vh - 80px); /* Adjust based on navbar height */
-}
-
-.home-section .content-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 40px;
-  max-width: 1000px;
-  margin: 0 auto;
-  padding: 0 20px;
-}
-
-.home-section .text-content {
-  text-align: center;
-}
-
-.home-section .intro-text {
-  font-size: 1.2rem;
-  color: #555;
-  margin-bottom: 10px;
-}
-
-.home-section .name-heading {
-  font-size: 3rem;
-  margin-bottom: 10px;
-  color: #222;
-}
-
-.home-section .highlight {
-  color: #007bff; /* Highlight color */
-}
-
-.home-section .role-heading {
-  font-size: 2rem;
-  color: #444;
-  margin-bottom: 20px;
-}
-
-.home-section .description {
-  font-size: 1.1rem;
-  color: #666;
-  max-width: 700px;
-  margin: 0 auto 30px auto;
-}
-
-.home-section .cta-buttons {
-  display: flex;
   justify-content: center;
-  gap: 20px;
+  position: relative;
+  padding: 0 20px; /* Adjusted padding */
+  overflow: hidden; /* Ensures shapes stay within bounds */
 }
 
-.home-section .cta-button {
-  background-color: #007bff;
-  color: #fff;
-  padding: 12px 25px;
-  border-radius: 5px;
-  text-decoration: none;
-  font-weight: bold;
-  transition: background-color 0.3s ease;
-}
-
-.home-section .cta-button:hover {
-  background-color: #0056b3;
-}
-
-.home-section .image-container {
-  margin-top: 30px;
-}
-
-.home-section .profile-image {
-  width: 250px;
-  height: 250px;
+.decorative-shapes .shape {
+  position: absolute;
   border-radius: 50%;
-  object-fit: cover;
-  border: 5px solid #007bff;
+  opacity: 0.4; /* Slightly increased opacity */
+  filter: blur(70px); /* Increased blur for softer effect */
+}
+
+.purple {
+  width: 180px; /* Larger size */
+  height: 180px; /* Larger size */
+  background-color: #c3aed6;
+  top: 15%; /* Adjusted position */
+  left: 5%; /* Adjusted position */
+}
+
+.pink {
+  width: 220px; /* Larger size */
+  height: 220px; /* Larger size */
+  background-color: #f6c0c0;
+  bottom: 10%; /* Adjusted position */
+  right: 8%; /* Adjusted position */
+}
+
+.blue {
+  width: 150px; /* Larger size */
+  height: 150px; /* Larger size */
+  background-color: #a3d8f4;
+  top: 40%; /* Adjusted position */
+  right: 15%; /* Adjusted position */
+}
+
+.content {
+  z-index: 10;
+  max-width: 1200px;
+  margin: 0 auto; /* Center content horizontally */
+  display: flex;
+  gap: 50px; /* Increased gap between text and image */
+  flex-wrap: nowrap; /* Prevent wrapping on larger screens */
+  justify-content: center;
+  align-items: center; /* Vertically align items */
+  width: 100%; /* Ensure content takes full width */
+}
+
+.text-container {
+  flex: 1.2; /* Give text slightly more space */
+  text-align: left; /* Align text to the left */
+  max-width: 600px; /* Limit text container width */
+}
+
+.intro-text {
+  font-size: 1.25rem; /* Increased font size */
+  color: #5c6ac4;
+  font-weight: 600; /* Slightly bolder */
+  margin-bottom: 10px;
+}
+
+.main-heading {
+  font-family: 'Montserrat', sans-serif; /* Use Montserrat font */
+  font-size: 3.5rem; /* Increased font size */
+  font-weight: 800; /* Extra bold */
+  color: #333;
+  line-height: 1.1; /* Tighter line height */
+  margin-bottom: 20px; /* More space below heading */
+}
+
+.highlight {
+  color: #9b59b6; /* Keep highlight color */
+}
+
+.role-heading {
+  font-family: 'Roboto Mono', monospace; /* Use Roboto Mono font */
+  font-size: 1.75rem; /* Increased font size */
+  color: #555;
+  margin: 15px 0 25px; /* Adjusted margin */
+}
+
+.role {
+  color: #e74c3c;
+  font-weight: 700; /* Bolder role text */
+}
+
+.description {
+  font-size: 1.1rem; /* Slightly larger description */
+  color: #666;
+  margin: 10px 0 30px; /* More space below description */
+  line-height: 1.7; /* Better readability */
+}
+
+.buttons {
+  display: flex;
+  gap: 20px; /* Increased gap between buttons */
+  justify-content: flex-start; /* Align buttons to the left */
+}
+
+.btn {
+  padding: 14px 28px; /* Larger buttons */
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem; /* Adjusted font size */
+  font-weight: 600; /* Slightly bolder */
+  cursor: pointer;
+  transition: all 0.3s ease; /* Smooth transition for hover effects */
+}
+
+.work-btn {
+  background: linear-gradient(to right, #3498db, #2980b9);
+  color: #fff;
+}
+
+.work-btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+}
+
+.resume-btn {
+  background: linear-gradient(to right, #2ecc71, #27ae60);
+  color: #fff;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.resume-btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+}
+
+.image-container {
+  flex: 0.8; /* Give image slightly less space */
+  display: flex;
+  justify-content: center; /* Center image within its flex container */
+  align-items: center;
+}
+
+.image-wrapper {
+  width: 300px; /* Increased image size */
+  height: 300px; /* Increased image size */
+  border-radius: 50%;
+  overflow: hidden;
+  border: 6px solid #5c6ac4; /* Thicker border */
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2); /* Added shadow for depth */
+}
+
+.profile-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Ensures the image covers the area without distortion */
+  display: block; /* Remove extra space below image */
+}
+
+/* Responsive adjustments for Home Section */
+@media (max-width: 992px) {
+  .content {
+    flex-direction: column; /* Stack items vertically */
+    text-align: center; /* Center text */
+    gap: 30px; /* Reduced gap */
+  }
+
+  .text-container {
+    text-align: center; /* Center text for smaller screens */
+    flex: none; /* Remove flex sizing */
+    max-width: 100%; /* Allow full width */
+  }
+
+  .main-heading {
+    font-size: 2.8rem; /* Adjust font size for smaller screens */
+  }
+
+  .role-heading {
+    font-size: 1.5rem; /* Adjust font size */
+  }
+
+  .buttons {
+    justify-content: center; /* Center buttons for smaller screens */
+  }
+
+  .image-wrapper {
+    width: 250px; /* Slightly smaller image on tablets */
+    height: 250px;
+  }
+}
+
+@media (max-width: 576px) {
+  .main-heading {
+    font-size: 2.2rem; /* Further adjust font size for mobile */
+  }
+
+  .role-heading {
+    font-size: 1.2rem; /* Further adjust font size */
+  }
+
+  .intro-text,
+  .description {
+    font-size: 0.95rem; /* Adjust font size for mobile */
+  }
+
+  .btn {
+    padding: 12px 20px; /* Smaller buttons on mobile */
+    font-size: 0.9rem;
+  }
+
+  .image-wrapper {
+    width: 200px; /* Smaller image on mobile */
+    height: 200px;
+  }
+
+  .decorative-shapes .shape {
+    filter: blur(40px); /* Less blur on smaller screens */
+  }
+
+  .purple {
+    width: 120px;
+    height: 120px;
+  }
+
+  .pink {
+    width: 160px;
+    height: 160px;
+  }
+
+  .blue {
+    width: 100px;
+    height: 100px;
+  }
 }
 
 /* About Section */

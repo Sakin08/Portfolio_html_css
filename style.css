@@ -149,12 +149,12 @@ body {
     position: fixed;
     top: 0;
     right: -100%; /* Initially off-screen */
-    width: 75%; /* Adjust width of the mobile menu */
-    max-width: 300px; /* Max width for larger mobile screens */
+    width: 50%; /* Further reduced width for a much more compact menu */
+    max-width: 250px; /* Adjusted max-width too */
     height: 100%;
     background-color: white; /* Consistent with navbar background */
     flex-direction: column; /* Stack links vertically */
-    padding: 5rem 1.5rem 2rem; /* More top padding for spacing from top */
+    padding: 3.5rem 0.8rem; /* Further reduced padding for less gap */
     box-shadow: -4px 0 15px rgba(0, 0, 0, 0.2);
     transition: right 0.3s ease-in-out;
     z-index: 999; /* Below nav-toggle but above other content */
@@ -164,7 +164,7 @@ body {
 
   .navbar .nav-links li {
     margin: 0; /* Reset desktop margin */
-    margin-bottom: 1.8rem; /* Space out vertical links more */
+    margin-bottom: 1.2rem; /* Reduced spacing between links even more */
     width: 100%; /* Make list items take full width */
   }
 
@@ -173,21 +173,21 @@ body {
   }
 
   .navbar .nav-links a {
-    font-size: 1.3rem; /* Larger font for mobile links */
+    font-size: 1.1rem; /* Slightly smaller font size for mobile links */
     display: block; /* Make links full width for better tapping */
-    padding: 0.5rem 0; /* Add some vertical padding for tap area */
+    padding: 0.4rem 0; /* Reduced vertical padding for tap area */
   }
 
   .navbar .social-icons {
     justify-content: flex-start; /* Align social icons to the left in the menu */
     width: 100%; /* Take full width of menu */
-    margin-top: 3rem; /* Add space above social icons */
+    margin-top: 2rem; /* Adjusted space above social icons */
     padding-left: 0; /* Reset any previous padding */
   }
 
   .navbar .social-icons .icon {
     margin-left: 0; /* Reset left margin for first icon */
-    margin-right: 15px; /* Add spacing between social icons */
+    margin-right: 12px; /* Slightly reduced spacing between social icons */
     /* Adjust filter for better visibility on white background */
     filter: invert(0%) brightness(0%) contrast(100%); /* Makes them black on white */
     /* Or if you want a subtle color, e.g., blue */
@@ -925,7 +925,6 @@ body {
     justify-content: center; /* Center icon and text together */
   }
 }
-
 /* --- Footer Section --- */
 .footer-section {
   background-color: #333;

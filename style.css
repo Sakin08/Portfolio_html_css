@@ -228,37 +228,7 @@ body {
   box-sizing: border-box; /* Include padding in element's total width and height */
 }
 
-.decorative-shapes .shape {
-  position: absolute;
-  border-radius: 50%;
-  opacity: 0.4;
-  filter: blur(70px);
-  z-index: 1; /* Ensure shapes are behind content */
-}
 
-.purple {
-  width: 180px;
-  height: 180px;
-  background-color: #c3aed6;
-  top: 15%;
-  left: 5%;
-}
-
-.pink {
-  width: 220px;
-  height: 220px;
-  background-color: #f6c0c0;
-  bottom: 10%;
-  right: 8%;
-}
-
-.blue {
-  width: 150px;
-  height: 150px;
-  background-color: #a3d8f4;
-  top: 40%;
-  right: 15%;
-}
 
 .home-section .content { /* Used .home-section .content to avoid conflict with global .container */
   z-index: 10;
@@ -1060,7 +1030,7 @@ body {
   }
 
   .contact-section .contact-details {
-    flex-direction: column; /* Ensure stacking */
+    flex-direction: column; 
     align-items: center; /* Center the stacked contact items */
   }
   .contact-section .contact-item {

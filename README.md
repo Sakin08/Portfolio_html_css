@@ -30,7 +30,7 @@ Welcome to my personal portfolio website! This project showcases my skills, proj
 
 ## 👨‍🎓 About Me
 
-I’m **MD. SOHANOOR RAHAMAN SAKIN**, a 2nd-year CSE student at Shahjalal University of Science and Technology. Passionate about web development, problem-solving, and building impactful digital experiences.
+I’m **MD. SOHANOOR RAHAMAN SAKIN**, a 3rd-year CSE student at Shahjalal University of Science and Technology. Passionate about web development, problem-solving, and building impactful digital experiences.
 
 ---
 ## 📷 Screenshots

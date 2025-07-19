@@ -33,7 +33,30 @@ Welcome to my personal portfolio website! This project showcases my skills, proj
 I’m **MD. SOHANOOR RAHAMAN SAKIN**, a 2nd-year CSE student at Shahjalal University of Science and Technology. Passionate about web development, problem-solving, and building impactful digital experiences.
 
 ---
+## 📷 Screenshots
 
+### 🏠 Home Page
+![Home Page](photo/home.png)
+
+### 👤 About Section
+![About Section](photo/about.png)
+
+### 💻 Project 1
+![Project 1](photo/project1.png)
+
+### 💻 Project 2
+![Project 2](photo/project2.png)
+
+### 🧠 Skills Section
+![Skills Section](photo/skills.png)
+
+### 🔻 Footer
+![Footer](photo/footer.png)
+
+
+
+
+---
 ## 📌 How to Use
 
 1. Clone the repository:
